@@ -4,11 +4,11 @@ cities = ["Jackson", "Southhaven", "Oxford", "Vicksburg"]
 # =====================
 # index = 0
 
-# while index < length.times
+# while index < cities.length.times
 #   city  = cities[index]
 #   puts "#{ city }, Mississippi"
 
-  # index += 1
+#   index += 1
 # end
 
 # times syntax
@@ -20,6 +20,29 @@ cities = ["Jackson", "Southhaven", "Oxford", "Vicksburg"]
 
 # each syntax
 # =====================
-cities.each do |city|
-  puts "#{ city }, Mississippi"
-end
+# cities.each do |city|
+#   puts "#{ city }, Mississippi"
+# end
+
+
+# until syntax (opposite of while)
+# =====================
+# index = cities.length.times # 4
+
+# until index < 1
+#   city  = cities[index]
+#   puts "#{ city }, Mississippi"
+
+#   index -= 1
+# end
+
+# puts !true
+
+# p 5 > 10
+# p 5 < 10
+# p 5 == 10
+# p 5 != 10
+# p 5 >= 10
+# p 5 <= 10
+
+# p 5 <=> 10
