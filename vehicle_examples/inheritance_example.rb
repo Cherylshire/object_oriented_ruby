@@ -18,6 +18,14 @@ class Vehicle
 end
 
 class Car < Vehicle
+  def initialize(input_options)
+    @fuel = input_options[:fuel]
+    @make = input_options[:make]
+    @model = input_options[:model]
+
+    super()
+  end
+
   def honk_horn
     puts "Beeeeeeep!"
   end
@@ -29,7 +37,12 @@ class Bike < Vehicle
   end
 end
 
-car = Car.new
+car = Car.new(
+              fuel: 10,
+              make: "Mini",
+              model: "4 Door Cooper"
+              )
+
 bike = Bike.new
 
 p car
