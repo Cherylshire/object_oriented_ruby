@@ -48,6 +48,4 @@ employee_2 = Employee.new(
                           active: true
                           )
 
-p employee_1.first_name
-p employee_1.last_name
-p employee_1.salary
+employee_1.print_info
