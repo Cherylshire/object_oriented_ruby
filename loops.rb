@@ -4,7 +4,7 @@ cities = ["Jackson", "Southhaven", "Oxford", "Vicksburg"]
 # =====================
 # index = 0
 
-# while index < cities.length.times
+# while index < cities.length
 #   city  = cities[index]
 #   puts "#{ city }, Mississippi"
 
@@ -27,7 +27,7 @@ cities = ["Jackson", "Southhaven", "Oxford", "Vicksburg"]
 
 # until syntax (opposite of while)
 # =====================
-# index = cities.length.times # 4
+# index = cities.length # 4
 
 # until index < 1
 #   city  = cities[index]
