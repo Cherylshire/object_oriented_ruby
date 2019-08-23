@@ -1,22 +1,39 @@
-local_variable
-@instance_variable
-@@class_variable
-$global_variable
-CONSTANT
+# local_variable (argument, block)
+# @instance_variable
+# @@class_variable
+# $global_variable
+# CONSTANT
 
 class Sheep
-  attr_reader :sound
-  attr_writer :sound
+  @@count = 0
+
   def initialize
-    @@sound = "hey"
-    
+    @@count += 1
+    @id = @@count
+    @awake_percentage = rand(1..100)
   end
 
-  def bleet
-    puts @@sound
+  def id
+    @id
   end
+
+  def self.how_many
+    @@count
+  end
+
+
+  def is_awake?
+    awake_percentage > 50
+  end
+
+private
+  def awake_percentage
+    @awake_percentage
+  end
+
 end
 
-sheep = Sheep.new
-sheep_1 = Sheep.new
-sheep_2 = Sheep.new
+p Sheep.new
+p Sheep.new
+p Sheep.new
+
